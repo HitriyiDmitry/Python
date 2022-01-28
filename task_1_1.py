@@ -10,7 +10,7 @@ elif 3600 <= duration < 86400:
     minutes = (duration - hours * 3600) // 60
     seconds = duration % 60
     print(hours, 'час', minutes, 'мин', seconds, 'сек')
-elif 86400 < duration:
+elif 86400 <= duration:
     days = duration // 86400
     hours = (duration - days * 86400) // 3600
     minutes = ((duration - days * 86400) - hours * 3600) // 60
@@ -34,7 +34,7 @@ for duration_1 in my_list:
         minutes = (duration_1 - hours * 3600) // 60
         seconds = duration_1 % 60
         print(hours, 'час', minutes, 'мин', seconds, 'сек')
-    elif 86400 < duration_1:
+    elif 86400 <= duration_1:
         days = duration_1 // 86400
         hours = (duration_1 - days * 86400) // 3600
         minutes = ((duration_1 - days * 86400) - hours * 3600) // 60
